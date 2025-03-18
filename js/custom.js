@@ -70,3 +70,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const headerMenu = document.querySelector(".header-menu-collaps");
+  const mobileWrapper = document.querySelector(".mobile-nav-wrapper");
+  const mobileClose = document.querySelector(".mobile-nav-close");
+  const body = document.body;
+
+  if (headerMenu && mobileClose) {
+      headerMenu.addEventListener("click", function () {
+        mobileWrapper.classList.add("expanded");
+        body.classList.add("locked");
+      });
+
+      mobileClose.addEventListener("click", function () {
+        mobileWrapper.classList.remove("expanded");
+          body.classList.remove("locked");
+      });
+  }
+});
+
+window.onload = function () {
+  jQuery('.count').counterUp({
+      delay: 10,
+      time: 1000
+  });
+};
+
+
+window.onload = function () {
+  setTimeout(function () {
+      jQuery(".preloader").addClass("loaded");
+      jQuery(".preloader").delay(600).fadeOut();
+  }, 1500);
+};
+

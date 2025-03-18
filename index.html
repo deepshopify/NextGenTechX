@@ -1,1002 +1,841 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexGen Technology</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="css/animation.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexGen Technology</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" />
-  <!-- <link rel="stylesheet" href="css/animation.css" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
 
-<body>
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+          <div class="spinner">
+          </div>
+          <div class="txt-loading">
+              <span data-text-preloader="N" class="letters-loading">
+                  N
+              </span>
+              <span data-text-preloader="E" class="letters-loading">
+                  E
+              </span>
+              <span data-text-preloader="X" class="letters-loading">
+                  X
+              </span>
+              <span data-text-preloader="G" class="letters-loading">
+                  G
+              </span>
+              <span data-text-preloader="E" class="letters-loading">
+                  E
+              </span>
+              <span data-text-preloader="N" class="letters-loading">
+                N
+            </span>
+          </div>
+          <h3 class="text-center">Technology</h3>
+      </div>
+      <div class="loader">
+          <div class="row">
+              <div class="col-3 loader-section section-left">
+                  <div class="bg"></div>
+              </div>
+              <div class="col-3 loader-section section-left">
+                  <div class="bg"></div>
+              </div>
+              <div class="col-3 loader-section section-right">
+                  <div class="bg"></div>
+              </div>
+              <div class="col-3 loader-section section-right">
+                  <div class="bg"></div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-  <div class="topbar-one">
-    <div class="container-fluid">
-      <div class="topbar-one-inner">
-        <ul class="topbar-left-one">
-          <li>
-            <img alt="icon" src="images/mail.svg" /><a href="mailto:test@company.com">test@company.com</a>
-          </li>
 
-          <li>
-            <img alt="icon" src="images/clock.svg" />
-            <p>Mon - Sat 8:00 AM - 6:00 PM</p>
-          </li>
-          <li></li>
 
-          <li>
-            <img alt="icon" src="images/location.svg" />
-            <p>135 klf, Hotland, USA</p>
-          </li>
-        </ul>
-        <div class="topbar-right-one">
-          <!-- <ul class="topbar-link-right-one">
+    <div class="topbar-one">
+      <div class="container-fluid">
+        <div class="topbar-one-inner">
+          <ul class="topbar-left-one">
+            <li>
+              <img alt="icon" src="images/mail.svg" /><a
+                href="mailto:test@company.com"
+                >test@company.com</a
+              >
+            </li>
+
+            <li>
+              <img alt="icon" src="images/clock.svg" />
+              <p>Mon - Sat 8:00 AM - 6:00 PM</p>
+            </li>
+            <li></li>
+
+            <li>
+              <img alt="icon" src="images/location.svg" />
+              <p>135 klf, Hotland, USA</p>
+            </li>
+          </ul>
+          <div class="topbar-right-one">
+            <!-- <ul class="topbar-link-right-one">
               <li><a href="#" data-discover="true">Login</a></li>
               <li><a href="#" data-discover="true">Company News</a></li>
               <li><a href="#" data-discover="true">FAQs</a></li>
             </ul> -->
-          <ul class="topbar-social-media-one">
-            <li>
-              <a href="#"><img alt="icon" src="images/insta.svg" /></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><img alt="icon" src="images/twitter.svg" /></a>
-            </li>
-            <li>
-              <a href="#"><img alt="icon" src="images/pintrest.svg" /></a>
-            </li>
-          </ul>
+            <ul class="topbar-social-media-one">
+              <li>
+                <a href="#"><img alt="icon" src="images/insta.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><img alt="icon" src="images/twitter.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img alt="icon" src="images/pintrest.svg" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <header class="main-header">
-    <div class="container-fluid">
-      <nav class="main-menu">
-        <div class="main-menu-logo">
-          <a href="index.html"><img alt="header-logo" src="images/logo.png" /></a>
-        </div>
-        <div class="main-menu-inner">
-          <ul class="main-menu-list">
-            <li class="menu-item-children active">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="menu-item-children">
-              <a href="about-us.html">About us</a>
-            </li>
-            <li class="menu-item-children">
-              <a href="services.html">Services</a>
-            </li>
-            <li class="menu-item-children">
-              <a href="contact-us.html">Contact Us</a>
-            </li>
-          </ul>
-          <div class="header-menu-collaps">
-            <span class="line-1"></span><span class="line-2"></span><span class="line-3"></span>
+    <header class="main-header">
+      <div class="container-fluid">
+        <nav class="main-menu">
+          <div class="main-menu-logo">
+            <a href="index.html"
+              ><img alt="header-logo" src="images/logo.png"
+            /></a>
           </div>
-          <div class="mobile-nav-wrapper">
-            <div class="mobile-nav-overlay"></div>
-            <div class="mobile-nav-content">
-              <button class="mobile-nav-close" style="
+          <div class="main-menu-inner">
+            <ul class="main-menu-list">
+              <li class="menu-item-children active">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="menu-item-children">
+                <a href="about-us.html">About us</a>
+              </li>
+              <li class="menu-item-children">
+                <a href="services.html">Services</a>
+              </li>
+              <li class="menu-item-children">
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="header-menu-collaps">
+              <span class="line-1"></span><span class="line-2"></span
+              ><span class="line-3"></span>
+            </div>
+            <div class="mobile-nav-wrapper">
+              <div class="mobile-nav-overlay"></div>
+              <div class="mobile-nav-content">
+                <button
+                  class="mobile-nav-close"
+                  style="
                     background: none;
                     font-size: 50px;
                     border: none;
                     position: fixed;
                     top: 10px;
                     color: rgb(255, 255, 255);
-                  ">
-                ×
-              </button>
-              <div class="logo-box">
-                <a href="#"><img width="150" alt="logo" src="images/logo.png" /></a>
+                  "
+                >
+                  ×
+                </button>
+                <div class="logo-box">
+                  <a href="#"
+                    ><img width="150" alt="logo" src="images/logo.png"
+                  /></a>
+                </div>
+                <div class="mobile-nav-container">
+                  <ul class="mobile-menu-list">
+                    <li class="menu-item-has-children">
+                      <a href="index.html"
+                        >Home</i
+                      ></a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="about-us.html">About us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="services.html">Services</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="contact-us.html">Contact Us</a>
+                    </li>                   
+                  </ul>
+                </div>
               </div>
-              <div class="mobile-nav-container">
-                <ul class="mobile-menu-list">
-                  <li class="menu-item-has-children">
-                    <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Portfolio <i class="fa-solid fa-chevron-down"></i></a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
-                  </li>
-                </ul>
+            </div>
+            <div class="main-menu-right">
+              <a class="btn btn-light btn-theme" href="contact-us.html">Get In Touch +</a>
+              <div class="header-side-menu">
+                <span class="line-1"></span><span class="line-2"></span>
+              </div>
+              <div class="side-menu-wrapper">
+                <div class="side-menu-overlay"></div>
+                <div class="side-menu-content">
+                  <a class="side-menu-toggler" href="#" data-discover="true"
+                    ><span></span><span></span
+                  ></a>
+
+                  <div class="logo-container">
+                  <div class="side-menu-logo-box">
+                    <a href="index.html" data-discover="true"
+                      ><img alt="logo" src="images/logo.png"
+                    /></a>
+                  </div>
+                </div>
+
+                  <div class="side-menu-container">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      esetting industry lorem Ipsum has been the industrys
+                      standard.
+                    </p>
+                    <h4>Contact Info</h4>
+                    <ul>
+                      <li><span>Mon - Fri: 8:00 - 16:00</span></li>
+                      <li>
+                        <a href="mailto:test@company.com">test@company.com</a>
+                      </li>
+                      <li><a href="tel:+1234567890">+1234567890</a></li>
+                    </ul>
+                    <h4>Office Address</h4>
+                    <p>industry lorem Ipsum has been the industrys</p>
+                    <ul class="side-menu-social-media">
+                      <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="main-menu-right">
-            <a class="btn btn-light btn-theme" href="#">Get In Touch +</a>
-            <!-- <a class="search-btn" href="#" data-discover="true"
-                ><img
-                  alt="icon"
-                  src="images/search.svg"
-              /></a>
-              <div class="search-popup">
-                <button class="close-search"></button>
-                <form method="post" action="/Blog">
-                  <div class="form-group">
-                    <input
-                      placeholder="Search Here"
-                      required=""
-                      type="search"
-                      name="search"
-                    /><button type="submit">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero slider -->
+    <section class="hero-slider swiper">
+      <div class="inner-slider swiper-wrapper">
+        <div class="hero-item swiper-slide">
+          <div class="hero-image">
+            <img src="images/slide1.webp" alt="hero-image" width="" height="" />
+          </div>
+
+          <div class="container">
+            <div class="hero-content">
+              <div class="left-side">
+                <h2>
+                  Expert Consulting <br />
+                  for a Sustainable Future
+                </h2>
+                <div class="bottom-brd">
+                  <div class="content-brd">
+                    <span></span>
                   </div>
-                </form>
-              </div> -->
-            <div class="header-side-menu">
-              <span class="line-1"></span><span class="line-2"></span>
-            </div>
-            <div class="side-menu-wrapper">
-              <div class="side-menu-overlay"></div>
-              <div class="side-menu-content">
-                <a class="side-menu-toggler" href="#" data-discover="true"><span></span><span></span></a>
-                <div class="side-menu-logo-box">
-                  <a href="#" data-discover="true"><img alt="logo" src="images/logo.png" /></a>
+                  <div class="shrt-brd">
+                    <span></span>
+                  </div>
                 </div>
-                <div class="side-menu-container">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    esetting industry lorem Ipsum has been the industrys
-                    standard.
+                <p>
+                  We approach every client relationship with a unique and
+                  invigorating perspective, coupled with an unwavering energy
+                  that inspires action.
+                </p>
+              </div>
+              <div class="right-side">
+                <a class="button" href="#">schedule a free consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-item swiper-slide">
+          <div class="hero-image">
+            <img src="images/slide1.webp" alt="hero-image" width="" height="" />
+          </div>
+
+          <div class="container">
+            <div class="hero-content">
+              <div class="left-side">
+                <h2>
+                  Expert Consulting <br />
+                  for a Sustainable Future
+                </h2>
+                <div class="bottom-brd">
+                  <div class="content-brd">
+                    <span></span>
+                  </div>
+                  <div class="shrt-brd">
+                    <span></span>
+                  </div>
+                </div>
+                <p>
+                  We approach every client relationship with a unique and
+                  invigorating perspective, coupled with an unwavering energy
+                  that inspires action.
+                </p>
+              </div>
+              <div class="right-side">
+                <a class="button" href="#">schedule a free consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-item swiper-slide">
+          <div class="hero-image">
+            <img src="images/slide1.webp" alt="hero-image" width="" height="" />
+          </div>
+
+          <div class="container">
+            <div class="hero-content">
+              <div class="left-side">
+                <h2>
+                  Expert Consulting <br />
+                  for a Sustainable Future
+                </h2>
+                <div class="bottom-brd">
+                  <div class="content-brd">
+                    <span></span>
+                  </div>
+                  <div class="shrt-brd">
+                    <span></span>
+                  </div>
+                </div>
+                <p>
+                  We approach every client relationship with a unique and
+                  invigorating perspective, coupled with an unwavering energy
+                  that inspires action.
+                </p>
+              </div>
+              <div class="right-side">
+                <a class="button" href="#">schedule a free consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="slider-tabs swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Hero slider -->
+
+    <!-- Icon Section-->
+    <section class="qualities">
+      <div class="container">
+        <div class="inner-qualities">
+          <div class="quality-item">
+            <div class="quality-icon">
+              <img
+                src="images/expertise.png"
+                alt="quality-icon"
+                width=""
+                height=""
+              />
+            </div>
+            <h4>expertise</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and esetting
+              industry lorem Ipsum has been the industrys standard.
+            </p>
+          </div>
+
+          <div class="quality-item">
+            <div class="quality-icon">
+              <img
+                src="images/technology.png"
+                alt="quality-icon"
+                width=""
+                height=""
+              />
+            </div>
+            <h4>technology</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and esetting
+              industry lorem Ipsum has been the industrys standard.
+            </p>
+          </div>
+
+          <div class="quality-item">
+            <div class="quality-icon">
+              <img
+                src="images/certificate.png"
+                alt="quality-icon"
+                width=""
+                height=""
+              />
+            </div>
+            <h4>certifications</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and esetting
+              industry lorem Ipsum has been the industrys standard.
+            </p>
+          </div>
+
+          <div class="quality-item">
+            <div class="quality-icon">
+              <img
+                src="images/reliability.png"
+                alt="quality-icon"
+                width=""
+                height=""
+              />
+            </div>
+            <h4>reliability</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and esetting
+              industry lorem Ipsum has been the industrys standard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Icon Section-->
+
+    <!-- Partner Section-->
+    <section class="partners">
+      <div class="container">
+        <div class="sec-heading">
+          <p class="subtitle">Recognized by the best</p>
+          <h3>Our Featured Clients</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+
+          <div class="bottom-brd">
+            <div class="content-brd">
+              <span></span>
+            </div>
+            <div class="shrt-brd">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="partner-logos">
+          <div class="partner-logo">
+            <img src="images/logo1.webp" alt="" width="" height="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/logo2.webp" alt="" width="" height="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/logo3.webp" alt="" width="" height="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/logo4.webp" alt="" width="" height="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/logo5.webp" alt="" width="" height="" />
+          </div>
+          <div class="partner-logo">
+            <img src="images/logo6.webp" alt="" width="" height="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- partner section-->
+
+    <!-- About us -->
+    <section class="about-us">
+      <div class="container">
+        <div class="about-wrapper">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="about-thumb">
+                <div class="thumb1">
+                  <img src="images/thumb1.jpg" alt="thumb" />
+                </div>
+                <div class="thumb2">
+                  <img src="images/thumb2.jpg" alt="thumb" />
+                </div>
+                <div class="shape">
+                  <img src="images/shape1.png" alt="shape" />
+                </div>
+                <div class="counter-box">
+                  <h2><span class="counter-number">25</span>k+</h2>
+                  <p>Years Experience</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <div class="section-title">
+                  <p class="subtitle">about our company</p>
+                  <h3 class="splt-txt">
+                    Strong Organization For Corporate Operations.
+                  </h3>
+
+                  <div class="bottom-brd">
+                    <div class="content-brd">
+                      <span></span>
+                    </div>
+                    <div class="shrt-brd">
+                      <span></span>
+                    </div>
+                  </div>
+
+                  <p class="text">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humor, or randomized words which don't
+                    look even slightly believable.
                   </p>
-                  <h4>Contact Info</h4>
-                  <ul>
-                    <li><span>Mon - Fri: 8:00 - 16:00</span></li>
+                </div>
+
+                <div class="checklist-wrapper">
+                  <ul class="checklist">
                     <li>
-                      <a href="mailto:test@company.com">test@company.com</a>
+                      <i class="fa-solid fa-check"></i> Innovative solutions
                     </li>
-                    <li><a href="tel:+1234567890">+1234567890</a></li>
+                    <li>
+                      <i class="fa-solid fa-check"></i> Secure transactions
+                    </li>
                   </ul>
-                  <h4>Office Address</h4>
-                  <p>industry lorem Ipsum has been the industrys</p>
-                  <ul class="side-menu-social-media">
+                  <ul class="checklist">
                     <li>
-                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <i class="fa-solid fa-check"></i> User-friendly interface
                     </li>
                     <li>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <i class="fa-solid fa-check"></i> Real-time analytics
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Hero slider -->
-  <section class="hero-slider swiper">
-    <div class="inner-slider swiper-wrapper">
-      <div class="hero-item swiper-slide">
-        <div class="hero-image">
-          <img src="images/slide1.webp" alt="hero-image" width="" height="" />
-        </div>
-
-        <div class="container">
-          <div class="hero-content">
-            <div class="left-side">
-              <h2>
-                Expert Consulting <br />
-                for a Sustainable Future
-              </h2>
-              <div class="bottom-brd">
-                <div class="content-brd">
-                  <span></span>
-                </div>
-                <div class="shrt-brd">
-                  <span></span>
+                <div class="contact-meta">
+                  <div class="btn-wrapper">
+                    <a class="button" href="#">discover more</a>
+                  </div>
+                  <div class="profile-meta">
+                    <div class="thumb">
+                      <img src="images/profile.jpg" alt="thumb" />
+                    </div>
+                    <div class="content">
+                      <div class="name">Company Owner</div>
+                      <div class="designation">CEO &amp; founder</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <p>
-                We approach every client relationship with a unique and
-                invigorating perspective, coupled with an unwavering energy
-                that inspires action.
-              </p>
-            </div>
-            <div class="right-side">
-              <a class="button" href="#">schedule a free consultation</a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- About us -->
 
-      <div class="hero-item swiper-slide">
-        <div class="hero-image">
-          <img src="images/slide1.webp" alt="hero-image" width="" height="" />
-        </div>
+    <!-- start new service -->
 
-        <div class="container">
-          <div class="hero-content">
-            <div class="left-side">
-              <h2>
-                Expert Consulting <br />
-                for a Sustainable Future
-              </h2>
-              <div class="bottom-brd">
-                <div class="content-brd">
-                  <span></span>
-                </div>
-                <div class="shrt-brd">
-                  <span></span>
-                </div>
-              </div>
-              <p>
-                We approach every client relationship with a unique and
-                invigorating perspective, coupled with an unwavering energy
-                that inspires action.
-              </p>
-            </div>
-            <div class="right-side">
-              <a class="button" href="#">schedule a free consultation</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-item swiper-slide">
-        <div class="hero-image">
-          <img src="images/slide1.webp" alt="hero-image" width="" height="" />
-        </div>
-
-        <div class="container">
-          <div class="hero-content">
-            <div class="left-side">
-              <h2>
-                Expert Consulting <br />
-                for a Sustainable Future
-              </h2>
-              <div class="bottom-brd">
-                <div class="content-brd">
-                  <span></span>
-                </div>
-                <div class="shrt-brd">
-                  <span></span>
-                </div>
-              </div>
-              <p>
-                We approach every client relationship with a unique and
-                invigorating perspective, coupled with an unwavering energy
-                that inspires action.
-              </p>
-            </div>
-            <div class="right-side">
-              <a class="button" href="#">schedule a free consultation</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="slider-tabs swiper-pagination"></div>
-    </div>
-  </section>
-  <!-- Hero slider -->
-
-  <!-- Icon Section-->
-  <section class="qualities">
-    <div class="container">
-      <div class="inner-qualities">
-        <div class="quality-item">
-          <div class="quality-icon">
-            <img src="images/expertise.png" alt="quality-icon" width="" height="" />
-          </div>
-          <h4>expertise</h4>
+    <div class="services">
+      <div class="container">        
+        <div class="sec-heading">
+          <p class="subtitle">our service</p>
+          <h3>in need of boost?</h3>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and esetting
-            industry lorem Ipsum has been the industrys standard.
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
           </p>
-        </div>
 
-        <div class="quality-item">
-          <div class="quality-icon">
-            <img src="images/technology.png" alt="quality-icon" width="" height="" />
-          </div>
-          <h4>technology</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and esetting
-            industry lorem Ipsum has been the industrys standard.
-          </p>
-        </div>
-
-        <div class="quality-item">
-          <div class="quality-icon">
-            <img src="images/certificate.png" alt="quality-icon" width="" height="" />
-          </div>
-          <h4>certifications</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and esetting
-            industry lorem Ipsum has been the industrys standard.
-          </p>
-        </div>
-
-        <div class="quality-item">
-          <div class="quality-icon">
-            <img src="images/reliability.png" alt="quality-icon" width="" height="" />
-          </div>
-          <h4>reliability</h4>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and esetting
-            industry lorem Ipsum has been the industrys standard.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Icon Section-->
-
-  <!-- Partner Section-->
-  <section class="partners">
-    <div class="container">
-      <div class="sec-heading">
-        <p class="subtitle">Recognized by the best</p>
-        <h3>Our Featured Clients</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-
-        <div class="bottom-brd">
-          <div class="content-brd">
-            <span></span>
-          </div>
-          <div class="shrt-brd">
-            <span></span>
+          <div class="bottom-brd">
+            <div class="content-brd">
+              <span></span>
+            </div>
+            <div class="shrt-brd">
+              <span></span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="partner-logos">
-        <div class="partner-logo">
-          <img src="images/logo1.webp" alt="" width="" height="" />
-        </div>
-        <div class="partner-logo">
-          <img src="images/logo2.webp" alt="" width="" height="" />
-        </div>
-        <div class="partner-logo">
-          <img src="images/logo3.webp" alt="" width="" height="" />
-        </div>
-        <div class="partner-logo">
-          <img src="images/logo4.webp" alt="" width="" height="" />
-        </div>
-        <div class="partner-logo">
-          <img src="images/logo5.webp" alt="" width="" height="" />
-        </div>
-        <div class="partner-logo">
-          <img src="images/logo6.webp" alt="" width="" height="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- partner section-->
-
-  <!-- About us -->
-  <section class="about-us">
-    <div class="container">
-      <div class="about-wrapper">
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="about-thumb">
-              <div class="thumb1">
-                <img src="images/thumb1.jpg" alt="thumb" />
+        <div class="row service-items">
+          <div
+            class="col-lg-3 col-md-6 aos-init aos-animate"
+            data-aos="zoom-in-up"
+            data-aos-duration="1200"
+          >
+            <div class="service4-box">
+              <div class="image overlay-anim">
+                <img alt="" src="images/service1.png" />
               </div>
-              <div class="thumb2">
-                <img src="images/thumb2.jpg" alt="thumb" />
-              </div>
-              <div class="shape">
-                <img src="images/shape1.png" alt="shape" />
-              </div>
-              <div class="counter-box">
-                <h2><span class="counter-number">25</span>k+</h2>
-                <p>Years Experience</p>
+              <a href="#" class="icon"
+                ><i class="fa-solid fa-arrow-right"></i></a>
+              <div class="heading4-w">
+                <h5><a href="#">Resume Enhancement</a></h5>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="about-content">
-              <div class="section-title">
-                <p class="subtitle">about our company</p>
-                <h3 class="splt-txt">
-                  Strong Organization For Corporate Operations.
-                </h3>
-
-                <div class="bottom-brd">
-                  <div class="content-brd">
-                    <span></span>
-                  </div>
-                  <div class="shrt-brd">
-                    <span></span>
-                  </div>
-                </div>
-
-                <p class="text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humor, or randomized words which don't
-                  look even slightly believable.
-                </p>
+          <div
+            class="col-lg-3 col-md-6 aos-init aos-animate"
+            data-aos-duration="900"
+            data-aos="zoom-in-up"
+          >
+            <div class="space30"></div>
+            <div class="service4-box">
+              <div class="image overlay-anim">
+                <img alt="" src="images/service1.png" />
               </div>
-
-              <div class="checklist-wrapper">
-                <ul class="checklist">
-                  <li>
-                    <i class="fa-solid fa-check"></i> Innovative solutions
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i> Secure transactions
-                  </li>
-                </ul>
-                <ul class="checklist">
-                  <li>
-                    <i class="fa-solid fa-check"></i> User-friendly interface
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-check"></i> Real-time analytics
-                  </li>
-                </ul>
-              </div>
-
-              <div class="contact-meta">
-                <div class="btn-wrapper">
-                  <a class="button" href="#">discover more</a>
-                </div>
-                <div class="profile-meta">
-                  <div class="thumb">
-                    <img src="images/profile.jpg" alt="thumb" />
-                  </div>
-                  <div class="content">
-                    <div class="name">Company Owner</div>
-                    <div class="designation">CEO &amp; founder</div>
-                  </div>
-                </div>
+              <a href="#" class="icon"
+                ><i class="fa-solid fa-arrow-right"></i></a>
+              <div class="heading4-w">
+                <h5><a href="#"> Portfolio Building</a></h5>
               </div>
             </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 aos-init aos-animate"
+            data-aos-duration="800"
+            data-aos="zoom-in-up"
+          >
+            <div class="service4-box">
+              <div class="image overlay-anim">
+                <img alt="" src="images/service1.png" />
+              </div>
+              <a href="#" class="icon"
+                ><i class="fa-solid fa-arrow-right"></i></a>
+              <div class="heading4-w">
+                <h5><a href="#">LinkedIn Optimization</a></h5>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 aos-init aos-animate"
+            data-aos-duration="1000"
+            data-aos="zoom-in-up"
+          >
+            <div class="space30"></div>
+            <div class="service4-box">
+              <div class="image overlay-anim">
+                <img alt="" src="images/service1.png" />
+              </div>
+              <a href="#" class="icon"
+                ><i class="fa-solid fa-arrow-right"></i></a>
+              <div class="heading4-w">
+                <h5><a href="#">Interview Preparation</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aos-init" data-aos="fade-left" data-aos-duration="900">
+          <div class="btn-wrapper">
+            <a class="button" href="#">learn more</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- About us -->
 
-  <!-- Services -->
-  <section class="services">
-    <div class="container">
-      <div class="sec-heading">
-        <p class="subtitle">our services</p>
-        <h3>Immigration Services</h3>
-        <p>
-          Whether you’re securing your future, or managing debt, our expert
-          advisors are your trusted partners.
-        </p>
-        <div class="bottom-brd">
-          <div class="content-brd">
-            <span></span>
-          </div>
-          <div class="shrt-brd">
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div class="service-tabs">
-        <div class="service-tabs-inner">
-          <div class="pxl-tabs--title">
-            <span class="pxl-item--title active">
-              <div class="icon-tab">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
-                  y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
-                  <g>
-                    <g>
-                      <g>
-                        <path
-                          d="M469.333,106.667H362.667V85.333c0-23.531-19.135-42.667-42.667-42.667H192c-23.531,0-42.667,19.135-42.667,42.667    v21.333H42.667C19.135,106.667,0,125.802,0,149.333v64C0,236.865,19.135,256,42.667,256h170.667v-10.667    c0-5.896,4.771-10.667,10.667-10.667h64c5.896,0,10.667,4.771,10.667,10.667V256h170.667C492.865,256,512,236.865,512,213.333    v-64C512,125.802,492.865,106.667,469.333,106.667z M320,106.667H192V85.333h128V106.667z">
-                        </path>
-                        <path
-                          d="M506.083,267.51c-3.635-1.802-7.979-1.385-11.188,1.052c-7.583,5.74-16.417,8.771-25.563,8.771H298.667v32    c0,5.896-4.771,10.667-10.667,10.667h-64c-5.896,0-10.667-4.771-10.667-10.667v-32H42.667c-9.146,0-17.979-3.031-25.563-8.771    c-3.219-2.458-7.552-2.875-11.188-1.052C2.292,269.313,0,273.01,0,277.063v149.604c0,23.531,19.135,42.667,42.667,42.667h426.667    c23.531,0,42.667-19.135,42.667-42.667V277.063C512,273.01,509.708,269.313,506.083,267.51z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                  <g></g>
-                </svg>
-              </div>
-              Business Immigration
-            </span>
-            <span class="pxl-item--title">
-              <div class="icon-tab">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="512" viewBox="0 0 512 512" width="512">
-                  <g>
-                    <path d="m196.601 148h54.082c9.508-19.733-4.884-43-27.048-43-22.122 0-36.581 23.23-27.034 43z">
-                    </path>
-                    <path
-                      d="m223.635 75c38.214 0 66.875 35.449 58.582 73h76.418v-33c0-5.523-4.477-10-10-10h-20.183c-2.3-8.052-5.508-15.72-9.497-22.894l14.281-14.281c3.905-3.905 3.905-10.237 0-14.142l-28.284-28.284c-3.905-3.905-10.237-3.905-14.142 0l-14.281 14.281c-7.174-3.99-14.842-7.197-22.894-9.498v-20.182c0-5.523-4.477-10-10-10h-40c-5.523 0-10 4.477-10 10v20.183c-8.052 2.3-15.72 5.508-22.894 9.498l-14.281-14.282c-3.905-3.905-10.237-3.905-14.142 0l-28.284 28.284c-3.905 3.905-3.905 10.237 0 14.142l14.282 14.281c-3.989 7.174-7.197 14.842-9.497 22.894h-20.184c-5.523 0-10 4.477-10 10v33h76.452c-8.34-37.649 20.415-73 58.548-73z">
-                    </path>
-                    <path
-                      d="m474.026 317.66-58.87-88.03c-1.003-17.81-4.58-35.09-10.669-51.63h-358.065c-33.78 91.708 12.41 197.467 109.033 231.75v87.25c0 8.28 6.71 15 15 15h171c8.28 0 15-6.72 15-15v-77h44c8.28 0 15-6.72 15-15v-64h46.1c11.961 0 19.131-13.38 12.471-23.34z">
-                    </path>
-                  </g>
-                </svg>
-              </div>
-              Skilled Immigration
-            </span>
-            <span class="pxl-item--title">
-              <div class="icon-tab">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 511.973 511.973"
-                  width="512">
-                  <g>
-                    <path
-                      d="m502.332 177.307c-1.414-.614-35.889-15.549-240-104-4.06-1.76-8.66-1.76-12.72 0l-240 104c-12.878 5.569-12.754 23.849 0 29.36 46.624 20.201 122.845 53.234 240 104 4.036 1.75 8.636 1.771 12.72 0 11.125-4.821 162.711-70.509 169.64-73.51v170.381c0 8.618 6.626 16.031 15.235 16.431 9.188.428 16.765-6.888 16.765-15.982v-176.633c0-2.514-1.862-4.637-4.356-4.958-30.031-3.87-171.66-22.15-205.694-26.539-9.844-1.23-15.978-11.198-13.39-20.07 2.03-7.493 9.144-12.266 16.35-11.77.718.042 228.73 29.466 228.567 29.445 4.26.548 7.762 3.276 9.444 6.975 1.176 2.586 4.17 3.771 6.742 2.565 4.305-2.018 8.039-4.674 9.737-10.685 2.186-7.789-1.764-15.864-9.04-19.01z">
-                    </path>
-                    <path
-                      d="m236.882 340.027-133.922-58.032c-3.302-1.431-6.988.99-6.988 4.588v57.404c0 53.83 70.28 96 160 96s160-42.17 160-96v-57.404c0-3.598-3.686-6.018-6.988-4.588l-133.932 58.032c-12.16 5.286-25.998 5.282-38.17 0z">
-                    </path>
-                  </g>
-                </svg>
-              </div>
-              Study in Abroad
-            </span>
-            <span class="pxl-item--title">
-              <div class="icon-tab">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="512" viewBox="0 0 511.941 511.941"
-                  width="512">
-                  <g>
-                    <path d="m120.971 0c-33.091 0-60 26.909-60 60s26.909 61 60 61 60-27.909 60-61-26.909-60-60-60z">
-                    </path>
-                    <path d="m450.971 60c0-33.091-26.909-60-60-60s-60 26.909-60 60 26.909 61 60 61 60-27.909 60-61z">
-                    </path>
-                    <path
-                      d="m175.166 455.08c34.915 29.297 43.51 37.55 52.855 45.495 8.906 7.573 20.024 11.367 31.143 11.367 11.221 0 22.441-3.867 31.348-11.572 16.271-14.086 33.904-30.339 49.763-44.242-8.513-2.86-16.531-7.425-23.22-14.121-17.811-17.789-22.758-44.738-11.499-68.324-30.586-16.192-68.529-16.15-99.131.068 11.204 23.558 6.266 50.475-11.552 68.271-5.778 5.775-12.502 10.133-19.707 13.058z">
-                    </path>
-                    <circle cx="255.971" cy="271" r="30"></circle>
-                    <path
-                      d="m255.971 192.25c-20.537-37.002-55.986-69.038-106.26-69.038-69.141 0-121.274 56.045-121.274 130.356 0 65.643 44.645 113.774 115.203 174.664 10.386 3.122 22.026.551 30.037-7.438 12.292-12.261 11.296-32.223-1.216-43.594-64.395-58.506-84.023-85.735-84.023-116.233h30c0 18.898 18.433 42.793 69.009 89.208 41.719-24.481 95.347-24.428 137.051.002 50.574-46.415 69.009-70.312 69.009-89.21h30c0 30.498-19.629 57.727-84.023 116.233-12.442 11.309-13.566 31.274-1.23 43.579 10.115 10.087 25.86 11.224 37.712 3.517 75.026-68.353 107.542-110.757 107.542-170.729 0-74.312-52.134-130.356-121.274-130.356-50.292.001-85.726 32.037-106.263 69.039zm60 78.75c0 33.091-26.909 60-60 60s-60-26.909-60-60 26.909-60 60-60 60 26.909 60 60z">
-                    </path>
-                  </g>
-                </svg>
-              </div>
-              Family Sponsorship
-            </span>
-          </div>
-          <!-- end tabs-->
+    <!--- end new service -->
 
-          <!-- start tabs data -->
-
-          <div class="tabs-content">
-            <div class="tabs-content-item item1 active">
-              <div class="tab-item-inner">
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
+    <!-- why choose-->
+    <section class="why-choose about-us">
+      <div class="container">
+        <div class="about-wrapper">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <img src="images/why-choose.webp" alt="" width="" height="" />
             </div>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <div class="section-title">
+                  <p class="subtitle">why choose our company</p>
+                  <h3 class="splt-txt">
+                    We See Solutions <br />
+                    Growing for your Business
+                  </h3>
 
-            <div class="tabs-content-item item2">
-              <div class="tab-item-inner">
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
+                  <div class="bottom-brd">
+                    <div class="content-brd">
+                      <span></span>
                     </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
+                    <div class="shrt-brd">
+                      <span></span>
                     </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
+                  </div>
+
+                  <p class="text">
+                    Our Consultants provide the highest quality advice and
+                    technical support and will assist your organization by
+                    thoroughly assessing your IT infrastructure and recommending
+                    the best long-term approach given your unique resource
+                    requirements.
+                  </p>
                 </div>
 
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
+                <div class="pxl-progressbar pxl-progressbar-1 style-1">
+                  <div class="pxl--item" data-wow-delay="ms">
+                    <div class="pxl--meta pxl-flex-middle">
+                      <h5 class="pxl--title pxl-flex-grow el-empty pxl-mr-20">
+                        Strategic Analysis
+                      </h5>
+                      <div class="pxl--percentage">80%</div>
                     </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
+                    <div class="pxl-progressbar--wrap">
+                      <div
+                        class="pxl--progressbar"
+                        role="progressbar"
+                        data-valuetransitiongoal="80"
+                        style="width: 80%"
+                        data-valuenow="80"
+                      ></div>
                     </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
+                  </div>
+                  <div class="pxl--item" data-wow-delay="ms">
+                    <div class="pxl--meta pxl-flex-middle">
+                      <h5 class="pxl--title pxl-flex-grow el-empty pxl-mr-20">
+                        Development Experience
+                      </h5>
+                      <div class="pxl--percentage">90%</div>
                     </div>
-                  </a>
+                    <div class="pxl-progressbar--wrap">
+                      <div
+                        class="pxl--progressbar"
+                        role="progressbar"
+                        data-valuetransitiongoal="90"
+                        style="width: 90%"
+                        data-valuenow="90"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="pxl--item" data-wow-delay="ms">
+                    <div class="pxl--meta pxl-flex-middle">
+                      <h5 class="pxl--title pxl-flex-grow el-empty pxl-mr-20">
+                        Enterprise Solutions
+                      </h5>
+                      <div class="pxl--percentage">95%</div>
+                    </div>
+                    <div class="pxl-progressbar--wrap">
+                      <div
+                        class="pxl--progressbar"
+                        role="progressbar"
+                        data-valuetransitiongoal="95"
+                        style="width: 95%"
+                        data-valuenow="95"
+                      ></div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="tabs-content-item item3">
-              <div class="tab-item-inner">
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="tabs-content-item item4">
-              <div class="tab-item-inner">
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="service-item">
-                  <a href="#">
-                    <div class="service-image">
-                      <img src="images/service1.webp" alt="" width="" height="" />
-                    </div>
-                    <div class="service-title">
-                      <h3>Start-Up Visa</h3>
-                    </div>
-                    <div class="service-desc">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum
-                        is that it has a more-or-less normal distribution of
-                        letters.
-                      </p>
-                    </div>
-                  </a>
+                <div class="contact-meta">
+                  <div class="btn-wrapper">
+                    <a class="button" href="#">discover more</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Services -->
-
-  <!-- why choose-->
-  <section class="why-choose about-us">
-    <div class="container">
-      <div class="about-wrapper">
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <img src="images/why-choose.webp" alt="" width="" height="" />
-          </div>
-          <div class="col-lg-6">
-            <div class="about-content">
-              <div class="section-title">
-                <p class="subtitle">why choose our company</p>
-                <h3 class="splt-txt">
-                  We See Solutions <br />
-                  Growing for your Business
-                </h3>
-
-                <div class="bottom-brd">
-                  <div class="content-brd">
-                    <span></span>
-                  </div>
-                  <div class="shrt-brd">
-                    <span></span>
-                  </div>
-                </div>
-
-                <p class="text">
-                  Our Consultants provide the highest quality advice and
-                  technical support and will assist your organization by
-                  thoroughly assessing your IT infrastructure and recommending
-                  the best long-term approach given your unique resource
-                  requirements.
-                </p>
-              </div>
-
-              <div class="pxl-progressbar pxl-progressbar-1 style-1">
-                <div class="pxl--item" data-wow-delay="ms">
-                  <div class="pxl--meta pxl-flex-middle">
-                    <h5 class="pxl--title pxl-flex-grow el-empty pxl-mr-20">
-                      Strategic Analysis
-                    </h5>
-                    <div class="pxl--percentage">80%</div>
-                  </div>
-                  <div class="pxl-progressbar--wrap">
-                    <div class="pxl--progressbar" role="progressbar" data-valuetransitiongoal="80" style="width: 80%"
-                      data-valuenow="80"></div>
-                  </div>
-                </div>
-                <div class="pxl--item" data-wow-delay="ms">
-                  <div class="pxl--meta pxl-flex-middle">
-                    <h5 class="pxl--title pxl-flex-grow el-empty pxl-mr-20">
-                      Development Experience
-                    </h5>
-                    <div class="pxl--percentage">90%</div>
-                  </div>
-                  <div class="pxl-progressbar--wrap">
-                    <div class="pxl--progressbar" role="progressbar" data-valuetransitiongoal="90" style="width: 90%"
-                      data-valuenow="90"></div>
-                  </div>
-                </div>
-                <div class="pxl--item" data-wow-delay="ms">
-                  <div class="pxl--meta pxl-flex-middle">
-                    <h5 class="pxl--title pxl-flex-grow el-empty pxl-mr-20">
-                      Enterprise Solutions
-                    </h5>
-                    <div class="pxl--percentage">95%</div>
-                  </div>
-                  <div class="pxl-progressbar--wrap">
-                    <div class="pxl--progressbar" role="progressbar" data-valuetransitiongoal="95" style="width: 95%"
-                      data-valuenow="95"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="contact-meta">
-                <div class="btn-wrapper">
-                  <a class="button" href="#">discover more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- why choose-->
+    </section>
+    <!-- why choose-->
 
     <!-- Numbers-->
     <section class="counter-area">
       <div class="container">
         <div class="counter__wrp gradient-bg">
-          <div class="counter__item wow bounceInUp" data-wow-delay="100ms" data-wow-duration="1000ms"
-            style="visibility: visible; animation-duration: 1000ms; animation-delay: 100ms; animation-name: bounceInUp;">
+          <div
+            class="counter__item wow bounceInUp"
+            data-wow-delay="100ms"
+            data-wow-duration="1000ms"
+            style="
+              visibility: visible;
+              animation-duration: 1000ms;
+              animation-delay: 100ms;
+              animation-name: bounceInUp;
+            "
+          >
             <img src="images/counter-icon1.png" alt="icon" />
             <div class="content">
               <h3><span class="count">7518</span>+</h3>
               <p class="text-white">Jobs Fulfilled</p>
             </div>
           </div>
-          <div class="counter__item wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1000ms"
-            style="visibility: visible; animation-duration: 1000ms; animation-delay: 200ms; animation-name: bounceInUp;">
+          <div
+            class="counter__item wow bounceInUp"
+            data-wow-delay="200ms"
+            data-wow-duration="1000ms"
+            style="
+              visibility: visible;
+              animation-duration: 1000ms;
+              animation-delay: 200ms;
+              animation-name: bounceInUp;
+            "
+          >
             <img src="images/counter-icon2.png" alt="icon" />
             <div class="content">
               <h3><span class="count">3472</span>+</h3>
               <p class="text-white">Extremely Satisfied Testimonials</p>
             </div>
           </div>
-          <div class="counter__item wow bounceInUp" data-wow-delay="400ms" data-wow-duration="1000ms"
-            style="visibility: visible; animation-duration: 1000ms; animation-delay: 400ms; animation-name: bounceInUp;">
+          <div
+            class="counter__item wow bounceInUp"
+            data-wow-delay="400ms"
+            data-wow-duration="1000ms"
+            style="
+              visibility: visible;
+              animation-duration: 1000ms;
+              animation-delay: 400ms;
+              animation-name: bounceInUp;
+            "
+          >
             <img src="images/counter-icon3.png" alt="icon" />
             <div class="content">
               <h3><span class="count">93</span>+</h3>
               <p class="text-white">Expert Coches</p>
             </div>
           </div>
-          <div class="counter__item wow bounceInUp" data-wow-delay="800ms" data-wow-duration="1000ms"
-            style="visibility: visible; animation-duration: 1000ms; animation-delay: 800ms; animation-name: bounceInUp;">
+          <div
+            class="counter__item wow bounceInUp"
+            data-wow-delay="800ms"
+            data-wow-duration="1000ms"
+            style="
+              visibility: visible;
+              animation-duration: 1000ms;
+              animation-delay: 800ms;
+              animation-name: bounceInUp;
+            "
+          >
             <img src="images/counter-icon4.png" alt="icon" />
             <div class="content">
               <h3><span class="count">3</span>+</h3>
@@ -1008,326 +847,482 @@
     </section>
     <!-- Numbers-->
 
-  <!-- testimonials-->
-  <section class="testimonials">
-    <div class="container">
-      <div class="inner-testimonials">
-        <div class="section-img">
-          <img src="images/testimonial.webp" alt="" width="" height="" />
-        </div>
-        <div class="testimonials-content">
-          <div class="section-title">
-            <p class="subtitle">testimonials</p>
-            <h3 class="splt-txt">what our customer say?</h3>
-            <p class="text">
-              More than 99% customer satisfication is our success.
-            </p>
-
-            <div class="bottom-brd">
-              <div class="content-brd">
-                <span></span>
-              </div>
-              <div class="shrt-brd">
-                <span></span>
-              </div>
-            </div>
+    <!-- testimonials-->
+    <section class="testimonials">
+      <div class="container">
+        <div class="inner-testimonials">
+          <div class="section-img">
+            <img src="images/testimonial.webp" alt="" width="" height="" />
           </div>
+          <div class="testimonials-content">
+            <div class="section-title">
+              <p class="subtitle">testimonials</p>
+              <h3 class="splt-txt">what our customer say?</h3>
+              <p class="text">
+                More than 99% customer satisfication is our success.
+              </p>
 
-          <div class="client-reviews swiper">
-            <div class="inner-reviews swiper-wrapper">
-              <div class="review-item swiper-slide">
-                <div class="review-desc">
-                  <p>
-                    Giles and his team at Herrington Business Consulting have
-                    been absolutely great to work with and they definitely
-                    have gone above and beyond for us by streamlining all of
-                    our accounts so that we can focus on what we do love to do
-                    and continue to grow our business.
-                  </p>
+              <div class="bottom-brd">
+                <div class="content-brd">
+                  <span></span>
                 </div>
-                <div class="content-bottom">
-                  <div class="pxl-item--holder pxl-flex-middle">
-                    <div class="pxl-item--avatar">
-                      <img loading="lazy" decoding="async" class="no-lazyload" src="images/avtaar.webp" width="76"
-                        height="76" alt="aw13" title="aw13" />
-                    </div>
-                    <div class="pxl-item--meta">
-                      <h3 class="pxl-item--title el-empty">
-                        Heather Smith - Talk
-                      </h3>
-                      <div class="pxl-item--star pxl-item--5-star">
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                      </div>
-                      <div class="pxl-item--position el-empty">
-                        Director, Radical Orange Pty Ltd.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="review-item swiper-slide">
-                <div class="review-desc">
-                  <p>
-                    Giles and his team at Herrington Business Consulting have
-                    been absolutely great to work with and they definitely
-                    have gone above and beyond for us by streamlining all of
-                    our accounts so that we can focus on what we do love to do
-                    and continue to grow our business.
-                  </p>
-                </div>
-                <div class="content-bottom">
-                  <div class="pxl-item--holder pxl-flex-middle">
-                    <div class="pxl-item--avatar">
-                      <img loading="lazy" decoding="async" class="no-lazyload" src="images/avtaar.webp" width="76"
-                        height="76" alt="aw13" title="aw13" />
-                    </div>
-                    <div class="pxl-item--meta">
-                      <h3 class="pxl-item--title el-empty">
-                        Heather Smith - Talk
-                      </h3>
-                      <div class="pxl-item--star pxl-item--5-star">
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                      </div>
-                      <div class="pxl-item--position el-empty">
-                        Director, Radical Orange Pty Ltd.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="review-item swiper-slide">
-                <div class="review-desc">
-                  <p>
-                    Giles and his team at Herrington Business Consulting have
-                    been absolutely great to work with and they definitely
-                    have gone above and beyond for us by streamlining all of
-                    our accounts so that we can focus on what we do love to do
-                    and continue to grow our business.
-                  </p>
-                </div>
-                <div class="content-bottom">
-                  <div class="pxl-item--holder pxl-flex-middle">
-                    <div class="pxl-item--avatar">
-                      <img loading="lazy" decoding="async" class="no-lazyload" src="images/avtaar.webp" width="76"
-                        height="76" alt="aw13" title="aw13" />
-                    </div>
-                    <div class="pxl-item--meta">
-                      <h3 class="pxl-item--title el-empty">
-                        Heather Smith - Talk
-                      </h3>
-                      <div class="pxl-item--star pxl-item--5-star">
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                        <svg width="800px" version="1.1" id="Capa_1" viewBox="0 0 53.867 53.867">
-                          <polygon
-                            points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 ">
-                          </polygon>
-                        </svg>
-                      </div>
-                      <div class="pxl-item--position el-empty">
-                        Director, Radical Orange Pty Ltd.
-                      </div>
-                    </div>
-                  </div>
+                <div class="shrt-brd">
+                  <span></span>
                 </div>
               </div>
             </div>
 
-            <div class="slider-pagination">
-              <div class="inner-pagination">
-                <div class="prev-arrow swiper-button-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36"
-                    height="13" viewBox="0 0 36 13">
-                    <image id="right-arrow_copy" data-name="right-arrow copy" width="36" height="13"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAANCAYAAADBo8xmAAAA2klEQVQ4jcXVMUtCURiH8Z/hFARxtSXqCwTOQZO6iOYU+AWc7Rv4jVylaEldouYGFzelqVqEWuPACSTuot7ufeBs57w8vO//nFNKKidSuMYtbvCVtuG/OEip28QI5zjMU0aK0BXGeEML70UKXeIeH6hjlbfMplANd1ijUZRMoIwLPOIYQ5zFtS/VXUYebtlzHFfWfCLZtmboUB+zeHiAeUZiO3dIzNAU3zHQi4yktuY31K/o4AiTjDK0l1DgBW1UYrcKkfr7MD6hi1M8xBwUKhQIT0APy7z/MfgBkSIg7SlpxHYAAAAASUVORK5CYII=">
-                    </image>
-                  </svg>
+            <div class="client-reviews swiper">
+              <div class="inner-reviews swiper-wrapper">
+                <div class="review-item swiper-slide">
+                  <div class="review-desc">
+                    <p>
+                      Giles and his team at Herrington Business Consulting have
+                      been absolutely great to work with and they definitely
+                      have gone above and beyond for us by streamlining all of
+                      our accounts so that we can focus on what we do love to do
+                      and continue to grow our business.
+                    </p>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="pxl-item--holder pxl-flex-middle">
+                      <div class="pxl-item--avatar">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          class="no-lazyload"
+                          src="images/avtaar.webp"
+                          width="76"
+                          height="76"
+                          alt="aw13"
+                          title="aw13"
+                        />
+                      </div>
+                      <div class="pxl-item--meta">
+                        <h3 class="pxl-item--title el-empty">
+                          Heather Smith - Talk
+                        </h3>
+                        <div class="pxl-item--star pxl-item--5-star">
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                        </div>
+                        <div class="pxl-item--position el-empty">
+                          Director, Radical Orange Pty Ltd.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="forward-arrow swiper-button-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36"
-                    height="13" viewBox="0 0 36 13">
-                    <image id="right-arrow_copy" data-name="right-arrow copy" width="36" height="13"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAANCAYAAADBo8xmAAAA2klEQVQ4jcXVMUtCURiH8Z/hFARxtSXqCwTOQZO6iOYU+AWc7Rv4jVylaEldouYGFzelqVqEWuPACSTuot7ufeBs57w8vO//nFNKKidSuMYtbvCVtuG/OEip28QI5zjMU0aK0BXGeEML70UKXeIeH6hjlbfMplANd1ijUZRMoIwLPOIYQ5zFtS/VXUYebtlzHFfWfCLZtmboUB+zeHiAeUZiO3dIzNAU3zHQi4yktuY31K/o4AiTjDK0l1DgBW1UYrcKkfr7MD6hi1M8xBwUKhQIT0APy7z/MfgBkSIg7SlpxHYAAAAASUVORK5CYII=">
-                    </image>
-                  </svg>
+
+                <div class="review-item swiper-slide">
+                  <div class="review-desc">
+                    <p>
+                      Giles and his team at Herrington Business Consulting have
+                      been absolutely great to work with and they definitely
+                      have gone above and beyond for us by streamlining all of
+                      our accounts so that we can focus on what we do love to do
+                      and continue to grow our business.
+                    </p>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="pxl-item--holder pxl-flex-middle">
+                      <div class="pxl-item--avatar">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          class="no-lazyload"
+                          src="images/avtaar.webp"
+                          width="76"
+                          height="76"
+                          alt="aw13"
+                          title="aw13"
+                        />
+                      </div>
+                      <div class="pxl-item--meta">
+                        <h3 class="pxl-item--title el-empty">
+                          Heather Smith - Talk
+                        </h3>
+                        <div class="pxl-item--star pxl-item--5-star">
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                        </div>
+                        <div class="pxl-item--position el-empty">
+                          Director, Radical Orange Pty Ltd.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-item swiper-slide">
+                  <div class="review-desc">
+                    <p>
+                      Giles and his team at Herrington Business Consulting have
+                      been absolutely great to work with and they definitely
+                      have gone above and beyond for us by streamlining all of
+                      our accounts so that we can focus on what we do love to do
+                      and continue to grow our business.
+                    </p>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="pxl-item--holder pxl-flex-middle">
+                      <div class="pxl-item--avatar">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          class="no-lazyload"
+                          src="images/avtaar.webp"
+                          width="76"
+                          height="76"
+                          alt="aw13"
+                          title="aw13"
+                        />
+                      </div>
+                      <div class="pxl-item--meta">
+                        <h3 class="pxl-item--title el-empty">
+                          Heather Smith - Talk
+                        </h3>
+                        <div class="pxl-item--star pxl-item--5-star">
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                          <svg
+                            width="800px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 53.867 53.867"
+                          >
+                            <polygon
+                              points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798 10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
+                            ></polygon>
+                          </svg>
+                        </div>
+                        <div class="pxl-item--position el-empty">
+                          Director, Radical Orange Pty Ltd.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-pagination">
+                <div class="inner-pagination">
+                  <div class="prev-arrow swiper-button-prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="36"
+                      height="13"
+                      viewBox="0 0 36 13"
+                    >
+                      <image
+                        id="right-arrow_copy"
+                        data-name="right-arrow copy"
+                        width="36"
+                        height="13"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAANCAYAAADBo8xmAAAA2klEQVQ4jcXVMUtCURiH8Z/hFARxtSXqCwTOQZO6iOYU+AWc7Rv4jVylaEldouYGFzelqVqEWuPACSTuot7ufeBs57w8vO//nFNKKidSuMYtbvCVtuG/OEip28QI5zjMU0aK0BXGeEML70UKXeIeH6hjlbfMplANd1ijUZRMoIwLPOIYQ5zFtS/VXUYebtlzHFfWfCLZtmboUB+zeHiAeUZiO3dIzNAU3zHQi4yktuY31K/o4AiTjDK0l1DgBW1UYrcKkfr7MD6hi1M8xBwUKhQIT0APy7z/MfgBkSIg7SlpxHYAAAAASUVORK5CYII="
+                      ></image>
+                    </svg>
+                  </div>
+                  <div class="forward-arrow swiper-button-next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="36"
+                      height="13"
+                      viewBox="0 0 36 13"
+                    >
+                      <image
+                        id="right-arrow_copy"
+                        data-name="right-arrow copy"
+                        width="36"
+                        height="13"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAANCAYAAADBo8xmAAAA2klEQVQ4jcXVMUtCURiH8Z/hFARxtSXqCwTOQZO6iOYU+AWc7Rv4jVylaEldouYGFzelqVqEWuPACSTuot7ufeBs57w8vO//nFNKKidSuMYtbvCVtuG/OEip28QI5zjMU0aK0BXGeEML70UKXeIeH6hjlbfMplANd1ijUZRMoIwLPOIYQ5zFtS/VXUYebtlzHFfWfCLZtmboUB+zeHiAeUZiO3dIzNAU3zHQi4yktuY31K/o4AiTjDK0l1DgBW1UYrcKkfr7MD6hi1M8xBwUKhQIT0APy7z/MfgBkSIg7SlpxHYAAAAASUVORK5CYII="
+                      ></image>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- testimonials-->
+    </section>
+    <!-- testimonials-->
 
-  <!-- FAQ-->
-  <section class="faq-section">
-    <div class="faq-container-wrapper">
-      <div class="container">
-        <div class="faq-wrapper style2">
-          <div class="row g-4">
-            <div class="col-xl-5 col-lg-6">
-              <div class="faq-thumb-wrapper">
-                <div class="thumb1">
-                  <img src="images/thumb11.jpg" alt="thumb" />
-                </div>
-                <div class="thumb2">
-                  <img src="images/thumb22.png" alt="thumb" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-7 col-lg-6">
-              <div class="section-title">
-                <p class="subtitle">faq</p>
-                <h3 class="splt-txt">Get Every Single Answer From Here</h3>
-                <div class="bottom-brd">
-                  <div class="content-brd">
-                    <span></span>
+    <!-- FAQ-->
+    <section class="faq-section">
+      <div class="faq-container-wrapper">
+        <div class="container">
+          <div class="faq-wrapper style2">
+            <div class="row g-4">
+              <div class="col-xl-5 col-lg-6">
+                <div class="faq-thumb-wrapper">
+                  <div class="thumb1">
+                    <img src="images/thumb11.jpg" alt="thumb" />
                   </div>
-                  <div class="shrt-brd">
-                    <span></span>
+                  <div class="thumb2">
+                    <img src="images/thumb22.png" alt="thumb" />
                   </div>
                 </div>
-                <p class="text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humor, or randomized words which don't
-                  look even slightly believable.
-                </p>
               </div>
-
-              <div class="faq-content">
-                <div class="accordion" id="accordionExample">
-                  <div class="er-accordion-item">
-                    <h2 class="er-accordion-header">
-                      <button class="er-accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What my product from the competition?
-                        <span><i class="fas fa-angle-down"></i></span>
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="er-accordion-collapse collapse show" data-bs-parent="#accordionExample"
-                      style="">
-                      <div class="er-accordion-body">
-                        <p>
-                          There are many variations of passages of Lom Ipsum
-                          available, but the majority have suffered alteration
-                          in form, by injected humor, or randomized
-                        </p>
-                      </div>
+              <div class="col-xl-7 col-lg-6">
+                <div class="section-title">
+                  <p class="subtitle">faq</p>
+                  <h3 class="splt-txt">Get Every Single Answer From Here</h3>
+                  <div class="bottom-brd">
+                    <div class="content-brd">
+                      <span></span>
+                    </div>
+                    <div class="shrt-brd">
+                      <span></span>
                     </div>
                   </div>
+                  <p class="text">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humor, or randomized words which don't
+                    look even slightly believable.
+                  </p>
+                </div>
 
-                  <div class="er-accordion-item wow fadeInUp" data-wow-delay=".3s" style="
+                <div class="faq-content">
+                  <div class="accordion" id="accordionExample">
+                    <div class="er-accordion-item">
+                      <h2 class="er-accordion-header">
+                        <button
+                          class="er-accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          <p class="ttl">What my product from the competition?</p>
+                          <span><i class="fas fa-angle-down"></i></span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="er-accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample"
+                        style=""
+                      >
+                        <div class="er-accordion-body">
+                          <p>
+                            There are many variations of passages of Lom Ipsum
+                            available, but the majority have suffered alteration
+                            in form, by injected humor, or randomized
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="er-accordion-item wow fadeInUp"
+                      data-wow-delay=".3s"
+                      style="
                         visibility: visible;
                         animation-delay: 0.3s;
                         animation-name: fadeInUp;
-                      ">
-                    <h2 class="er-accordion-header">
-                      <button class="er-accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        How much powering do my suppliers have?
-                        <span><i class="fas fa-angle-down"></i></span>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="er-accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="er-accordion-body">
-                        <p>
-                          There are many variations of passages of Lom Ipsum
-                          available, but the majority have suffered alteration
-                          in form, by injected humor, or randomized
-                        </p>
+                      "
+                    >
+                      <h2 class="er-accordion-header">
+                        <button
+                          class="er-accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                        <p class="ttl">How much powering do my suppliers?</p>
+                          <span><i class="fas fa-angle-down"></i></span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="er-accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="er-accordion-body">
+                          <p>
+                            There are many variations of passages of Lom Ipsum
+                            available, but the majority have suffered alteration
+                            in form, by injected humor, or randomized
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="er-accordion-item wow fadeInUp" data-wow-delay=".6s" style="
+                    <div
+                      class="er-accordion-item wow fadeInUp"
+                      data-wow-delay=".6s"
+                      style="
                         visibility: visible;
                         animation-delay: 0.6s;
                         animation-name: fadeInUp;
-                      ">
-                    <h2 class="er-accordion-header">
-                      <button class="er-accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Does my business have a moat around it?
-                        <span><i class="fas fa-angle-down"></i></span>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="er-accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="er-accordion-body">
-                        <p>
-                          There are many variations of passages of Lom Ipsum
-                          available, but the majority have suffered alteration
-                          in form, by injected humor, or randomized
-                        </p>
+                      "
+                    >
+                      <h2 class="er-accordion-header">
+                        <button
+                          class="er-accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                        <p class="ttl">Does my business have a moat around it?</p>                        
+                          <span><i class="fas fa-angle-down"></i></span>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="er-accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="er-accordion-body">
+                          <p>
+                            There are many variations of passages of Lom Ipsum
+                            available, but the majority have suffered alteration
+                            in form, by injected humor, or randomized
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1337,198 +1332,225 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- FAQ-->
+    </section>
+    <!-- FAQ-->
 
-  <footer class="footer-section">
-    <div class="footer-widgets-wrapper footer-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s" style="
+    <footer class="footer-section">
+      <div class="footer-widgets-wrapper footer-bg">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+              style="
                 visibility: visible;
                 animation-delay: 0.3s;
                 animation-name: fadeInUp;
-              ">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <a href="index.html">
-                  <img src="images/logo.png" alt="logo-img" />
-                </a>
-              </div>
-              <div class="footer-content">
-                <p>
-                  Phasellus ultricies aliquam volutpat ullamcorper laoreet
-                  neque, a lacinia curabitur lacinia mollis
-                </p>
-                <div class="social-icon d-flex align-items-center">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              "
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index.html">
+                    <img src="images/logo.png" alt="logo-img" />
+                  </a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    Phasellus ultricies aliquam volutpat ullamcorper laoreet
+                    neque, a lacinia curabitur lacinia mollis
+                  </p>
+                  <div class="social-icon d-flex align-items-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s" style="
+            <div
+              class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp"
+              data-wow-delay=".5s"
+              style="
                 visibility: visible;
                 animation-delay: 0.5s;
                 animation-name: fadeInUp;
-              ">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Quick Links</h3>
+              "
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Quick Links</h3>
+                </div>
+                <ul class="list-area">
+                  <li>
+                    <a href="about-us.html">
+                      <i class="fa-solid fa-chevron-right"></i>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="services.html">
+                      <i class="fa-solid fa-chevron-right"></i>
+                      Our Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-chevron-right"></i>
+                      Our Blogs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-chevron-right"></i>
+                      FAQ’S
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact-us.html">
+                      <i class="fa-solid fa-chevron-right"></i>
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="list-area">
-                <li>
-                  <a href="about.html">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="service.html">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Our Services
-                  </a>
-                </li>
-                <li>
-                  <a href="blog.html">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Our Blogs
-                  </a>
-                </li>
-                <li>
-                  <a href="faq.html">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    FAQ’S
-                  </a>
-                </li>
-                <li>
-                  <a href="contact.html">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s" style="
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".7s"
+              style="
                 visibility: visible;
                 animation-delay: 0.7s;
                 animation-name: fadeInUp;
-              ">
-            <div class="single-footer-widget style-margin">
-              <div class="widget-head">
-                <h3>Recent Posts</h3>
-              </div>
-              <div class="recent-post-area">
-                <div class="recent-post-items">
-                  <div class="thumb">
-                    <img src="images/blog1.jpg" alt="post-img" />
-                  </div>
-                  <div class="content">
-                    <ul class="post-date">
-                      <li>
-                        <i class="fa-solid fa-calendar-days me-2"></i>
-                        20 Feb, 2025
-                      </li>
-                    </ul>
-                    <h6>
-                      <a href="#">
-                        2025 Batterman Award<br />
-                        honorsBrad Burkhart
-                      </a>
-                    </h6>
-                  </div>
+              "
+            >
+              <div class="single-footer-widget style-margin">
+                <div class="widget-head">
+                  <h3>Recent Posts</h3>
                 </div>
-                <div class="recent-post-items mb-0">
-                  <div class="thumb">
-                    <img src="images/blog1.jpg" alt="post-img" />
+                <div class="recent-post-area">
+                  <div class="recent-post-items">
+                    <div class="thumb">
+                      <img src="images/blog1.jpg" alt="post-img" />
+                    </div>
+                    <div class="content">
+                      <ul class="post-date">
+                        <li>
+                          <i class="fa-solid fa-calendar-days me-2"></i>
+                          20 Feb, 2025
+                        </li>
+                      </ul>
+                      <h6>
+                        <a href="#">
+                          2025 Batterman Award<br />
+                          honorsBrad Burkhart
+                        </a>
+                      </h6>
+                    </div>
                   </div>
-                  <div class="content">
-                    <ul class="post-date">
-                      <li>
-                        <i class="fa-solid fa-calendar-days me-2"></i>
-                        15 Dec, 2025
-                      </li>
-                    </ul>
-                    <h6>
-                      <a href="#">
-                        2025 Batterman Award<br />
-                        honorsBrad Burkhart
-                      </a>
-                    </h6>
+                  <div class="recent-post-items mb-0">
+                    <div class="thumb">
+                      <img src="images/blog1.jpg" alt="post-img" />
+                    </div>
+                    <div class="content">
+                      <ul class="post-date">
+                        <li>
+                          <i class="fa-solid fa-calendar-days me-2"></i>
+                          15 Dec, 2025
+                        </li>
+                      </ul>
+                      <h6>
+                        <a href="#">
+                          2025 Batterman Award<br />
+                          honorsBrad Burkhart
+                        </a>
+                      </h6>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".9s" style="
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp"
+              data-wow-delay=".9s"
+              style="
                 visibility: visible;
                 animation-delay: 0.9s;
                 animation-name: fadeInUp;
-              ">
-            <div class="single-footer-widget">
-              <div class="widget-head">
-                <h3>Contact Us</h3>
-              </div>
-              <div class="footer-content">
-                <ul class="contact-info">
-                  <li>
-                    <i class="fas fa-map-marker-alt"></i>
-                    6391 Elgin St. Celina, USA
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <a href="tel:2086660112">+208-666-0112</a>
-                  </li>
-                  <li>
-                    <i class="fa-regular fa-envelope"></i>
-                    <a href="mailto:corpx.info@webmail.com">corpx.info@webmail.com</a>
-                  </li>
-                </ul>
+              "
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Contact Us</h3>
+                </div>
+                <div class="footer-content">
+                  <ul class="contact-info">
+                    <li>
+                      <i class="fas fa-map-marker-alt"></i>
+                      6391 Elgin St. Celina, USA
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-phone-volume"></i>
+                      <a href="tel:2086660112">+208-666-0112</a>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-envelope"></i>
+                      <a href="mailto:corpx.info@webmail.com"
+                        >corpx.info@webmail.com</a
+                      >
+                    </li>
+                  </ul>
 
-                <div class="btn-wrapper">
-                  <a class="button" href="#"> get A Quote</a>
+                  <div class="btn-wrapper">
+                    <a class="button" href="#"> get A Quote</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="footer-wrapper d-flex align-items-center justify-content-between">
-          <p class="wow fadeInLeft color-2" data-wow-delay=".3s" style="
+      <div class="footer-bottom">
+        <div class="container">
+          <div
+            class="footer-wrapper d-flex align-items-center justify-content-between"
+          >
+            <p
+              class="wow fadeInLeft color-2"
+              data-wow-delay=".3s"
+              style="
                 visibility: visible;
                 animation-delay: 0.3s;
                 animation-name: fadeInLeft;
-              ">
-            © All Copyright 2025 by <a href="#">Company</a>
-          </p>
-          <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s" style="
+              "
+            >
+              © All Copyright 2025 by <a href="#">Company</a>
+            </p>
+            <ul
+              class="footer-menu wow fadeInRight"
+              data-wow-delay=".5s"
+              style="
                 visibility: visible;
                 animation-delay: 0.5s;
                 animation-name: fadeInRight;
-              ">
-            <li>
-              <a href="#"> Terms &amp; Condition </a>
-            </li>
-            <li>
-              <a href="#"> Privacy Policy </a>
-            </li>
-          </ul>
+              "
+            >
+              <li>
+                <a href="#"> Terms &amp; Condition </a>
+              </li>
+              <li>
+                <a href="#"> Privacy Policy </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/custom.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/jquery.counterup.min.js"></script> -->
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 
-</body>
-
+  </body>
 </html>
