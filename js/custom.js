@@ -1,23 +1,28 @@
 var swiper = new Swiper(".hero-slider", {
     centeredSlides: false,
-    loop: false,
+    loop: true,
     initialSlide: 0,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        var bulletNames = ["1. Strategic Consulting", "2. Market Analysis", "3. Investment Solutions"];
-        return (
-          '<span class="' + className + '">' + bulletNames[index] + "</span>"
-        );
-      },
+    speed: 800,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
     },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    //   renderBullet: function (index, className) {
+    //     var bulletNames = ["1. Strategic Consulting", "2. Market Analysis", "3. Investment Solutions"];
+    //     return (
+    //       '<span class="' + className + '">' + bulletNames[index] + "</span>"
+    //     );
+    //   },
+    // },
     breakpoints: {
       0: {
-        spaceBetween: 30,
+        spaceBetween: 0,
       },
       768: {
-        spaceBetween: 60,
+        spaceBetween: 0,
       },
     },
   });
@@ -93,11 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.onload = function () {
   jQuery('.count').counterUp({
-      delay: 10,
-      time: 1000
+      delay: 1000,
+      time: 2000
   });
 };
-
 
 window.onload = function () {
   setTimeout(function () {
@@ -106,3 +110,25 @@ window.onload = function () {
   }, 1500);
 };
 
+var swiper = new Swiper(".partner-slider", {
+  loop:true,
+  speed: 800,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    479:{
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  },
+});

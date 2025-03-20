@@ -159,14 +159,14 @@
 
 @media only screen and (max-width: 992px) {
 
-    .partner-logos {
+    /* .partner-logos {
         flex-wrap: wrap;
         row-gap: 2rem;
-    }
+    } */
 
-    .partner-logo {
+    /* .partner-logo {
         width: calc(100%/4);
-    }
+    } */
 
     .hero-image>img {
         min-height: 57vh;
@@ -186,6 +186,12 @@
     .testimonials-content {
         width: 100%;
     }
+
+    .preloader .animation-preloader .txt-loading {
+        font-size: 4rem;
+    }
+
+
 }
 
 
@@ -259,6 +265,9 @@
         width: 100%;
     }
 
+    .preloader .animation-preloader .txt-loading {
+        font-size: 3rem;
+    }
 
 }
 

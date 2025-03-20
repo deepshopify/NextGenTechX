@@ -1420,7 +1420,7 @@ body {
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    column-gap: 2rem;
+    /* column-gap: 2rem; */
 }
 
 .partner-logo img {
@@ -2347,7 +2347,7 @@ ul.side-menu-social-media li a:hover i {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 20px;
     position: relative;
     /* margin-top: 50px; */
@@ -2686,7 +2686,7 @@ h2 {
 }
 
 .preloader .animation-preloader .txt-loading {
-    font: bold 5em "Inter", sans-serif;
+    font: bold 5rem "Inter", sans-serif;
     text-align: center;
     user-select: none;
 }
@@ -2732,4 +2732,18 @@ span {
 
 .animation-preloader h3 {
     color: var(--white);
+}
+
+.e-verify {
+    max-width: 150px;
+    margin-top: 1.5rem;
+}
+
+.element {
+    opacity: 0;
+    transition: all;
+}
+
+.element.visible {
+    opacity: 1;
 }
