@@ -72,20 +72,20 @@
 
 .services .bottom-brd,
 .partners .bottom-brd,
-.popular-services .bottom-brd {
+.popular-services .bottom-brd, .blogs .bottom-brd {
     max-width: 400px;
     width: 100%;
 }
 
 .services .content-brd,
 .partners .content-brd,
-.popular-services .content-brd {
+.popular-services .content-brd, .blogs .content-brd {
     width: 100%;
 }
 
 .services .shrt-brd,
 .partners .shrt-brd,
-.popular-services .shrt-brd {
+.popular-services .shrt-brd, .blogs .shrt-brd {
     margin: 0 auto;
 }
 
@@ -2739,11 +2739,106 @@ span {
     margin-top: 1.5rem;
 }
 
-.element {
-    opacity: 0;
-    transition: all;
+/** blogs **/
+
+.blog-entry {
+    width: 100%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #f89a1b73;
+    border-image: initial;
 }
 
-.element.visible {
-    opacity: 1;
+.block-20 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 275px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-position: center center;
+}
+
+.blog-entry .meta-date {
+    display: inline-block;
+    background: var(--main-color);
+}
+
+.blog-entry .meta-date .day {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.blog-entry .meta-date span {
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.blog-entry .meta-date .mos, .blog-entry .meta-date .yr {
+    font-size: 13px;
+}
+
+.blog-entry .text {
+    position: relative;
+    border-top: 0px;
+    border-radius: 2px;
+}
+
+.blog-entry .text .heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.blog-entry .text .heading a {
+    color: rgb(0, 0, 0);
+}
+
+
+.btn.btn-primary {
+    color: rgb(255, 255, 255);
+    background: rgb(27, 156, 227);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(27, 156, 227);
+    border-image: initial;
+}
+
+.blog-entry .text .meta-chat {
+    color: rgb(179, 179, 179);
+}
+
+.blog-items {
+    margin-top:3rem;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+
+.blog-entry a.mr-2 {
+    color: var(--main-color);
+}
+
+.tagcloud a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 10px;
+    margin-bottom: 7px;
+    margin-right: 4px;
+    border-radius: 4px;
+    color: #000000;
+    border: 1px solid #ccc;
+    font-size: 11px;
+}
+
+.bg-light {
+    background: #fafafa !important;
+}
+
+.bio img {
+    max-width: 450px;
+}
+
+.bio {
+    margin-right:3rem;
 }

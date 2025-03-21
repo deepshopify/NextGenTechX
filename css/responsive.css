@@ -269,6 +269,13 @@
         font-size: 3rem;
     }
 
+    .blog-items .col-md-6 {
+        margin-bottom: 1rem;
+    }
+
+    .about-author {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -295,6 +302,9 @@
         transition: all 400ms linear;
     }
 
+    .blog-entry {
+        margin-bottom: 30px;
+    }
 }
 
 

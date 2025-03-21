@@ -45,6 +45,7 @@ var swiper = new Swiper(".hero-slider", {
 });
 
 var swiper = new Swiper(".client-reviews", {
+  speed: 800,
  navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -96,19 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-window.onload = function () {
-  jQuery('.count').counterUp({
-      delay: 1000,
-      time: 2000
-  });
-};
-
-window.onload = function () {
-  setTimeout(function () {
-      jQuery(".preloader").addClass("loaded");
-      jQuery(".preloader").delay(600).fadeOut();
-  }, 1500);
-};
+// window.onload = function () {
+//   setTimeout(function () {
+//       jQuery(".preloader").addClass("loaded");
+//       jQuery(".preloader").delay(600).fadeOut();
+//   }, 1200);
+// };
 
 var swiper = new Swiper(".partner-slider", {
   loop:true,
