@@ -276,6 +276,16 @@
     .about-author {
         flex-direction: column;
     }
+
+    .cta2 .cta2-bg .heading2 {
+        padding: 40px;
+    }
+
+    .cta2 .cta2-bg {
+        min-height: 720px;
+    }
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -365,4 +375,15 @@
     }
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .cta2 .cta2-bg .heading2 {
+        padding: 80px 80px 80px 80px;
+    }
+
+    .cta2 .cta2-bg {
+        min-height: 780px;
+    }
+}
 

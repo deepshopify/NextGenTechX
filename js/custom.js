@@ -7,16 +7,6 @@ var swiper = new Swiper(".hero-slider", {
       delay: 4000,
       disableOnInteraction: true,
     },
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    //   renderBullet: function (index, className) {
-    //     var bulletNames = ["1. Strategic Consulting", "2. Market Analysis", "3. Investment Solutions"];
-    //     return (
-    //       '<span class="' + className + '">' + bulletNames[index] + "</span>"
-    //     );
-    //   },
-    // },
     breakpoints: {
       0: {
         spaceBetween: 0,
@@ -26,6 +16,38 @@ var swiper = new Swiper(".hero-slider", {
       },
     },
   });
+
+  var swiper = new Swiper(".process-slider", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    loop: true,
+    initialSlide: 0,
+    speed: 800,
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: true,
+    // },
+    pagination: {
+      el: ".process-nos",
+      clickable: true,
+      renderBullet: function (index, className) {
+        var bulletNames = ["1. Assessment", "2. IT Training", "3. Resume Building","4. Interview Preparation","5. Placement", "6. Success" ];
+        return (
+          '<span class="' + className + '">' + bulletNames[index] + "</span>"
+        );
+      },
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 20,
+      },
+      768: {
+        spaceBetween: 20,
+      },
+    },
+  });
+
+
 
   document.addEventListener("DOMContentLoaded", function () {
     const tabTitles = document.querySelectorAll(".pxl-item--title");
