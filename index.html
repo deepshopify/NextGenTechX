@@ -30,7 +30,16 @@
 
 <body>
 
-  <div id="preloader" class="preloader">
+
+  <div class="preloader" id="preloader">
+    <video autoplay loop muted>
+        <source src="images/loader.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+  <!-- <div id="preloader" class="preloader">
     <div class="animation-preloader">
       <div class="spinner">
       </div>
@@ -69,7 +78,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="topbar-one">
     <div class="container-fluid">
@@ -176,10 +185,16 @@
                     <a href="services.html">Services</a>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="contact-us.html">Contact Us</a>
+                    <a href="blog.html">Blog</a>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="blog.html">Blog</a>
+                    <a href="plans.html">Plans</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="refer-earn.html">Refer & Earn</a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="contact-us.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -1409,8 +1424,14 @@
       setTimeout(function () {
         jQuery(".preloader").addClass("loaded");
         jQuery(".preloader").delay(600).fadeOut();
-      }, 1200);
+      }, 1400);
     };
+
+      // setTimeout(() => {
+      //   document.getElementById("videoLoader").classList.add("hidden");
+      //   jQuery(".preloader").delay(600).fadeOut();
+      //       }, 3000);
+    
     new WOW().init();
   </script>
 </body>
