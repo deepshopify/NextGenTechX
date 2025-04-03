@@ -1,6 +1,7 @@
 :root {
 
-    --main-color: #F89A1B;
+    /* --main-color: #F89A1B; */
+    --main-color:#DFB615;
     --second-color: #00ADEF;
     --white: #ffffff;
     --head-color: #000000;
@@ -1997,7 +1998,7 @@ body {
     right: 10px;
 }
 
-.faq-wrapper.style2 .accordion .er-accordion-item .er-accordion-button span i {
+.faq-wrapper .accordion .er-accordion-item .er-accordion-button span i {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -2009,7 +2010,7 @@ body {
     display: inline-block;
 }
 
-.faq-wrapper.style2 .accordion .er-accordion-item .er-accordion-body {
+.faq-wrapper .accordion .er-accordion-item .er-accordion-body {
     background-color: var(--white);
     padding: 0 50px 30px 35px;
     fill: var(--white);
@@ -2021,12 +2022,12 @@ body {
     -o-border-radius: 0 0 20px 20px;
 }
 
-.faq-wrapper.style2 .accordion .er-accordion-item .er-accordion-button.collapsed span i {
+.faq-wrapper .accordion .er-accordion-item .er-accordion-button.collapsed span i {
     background-color: var(--head-color);
     color: var(--white);
 }
 
-.faq-wrapper.style2 .accordion .er-accordion-item .er-accordion-button.collapsed span {
+.faq-wrapper .accordion .er-accordion-item .er-accordion-button.collapsed span {
     transform: rotate(-90deg);
 }
 
@@ -3261,4 +3262,56 @@ tr {
 
 .infos {
     margin-bottom:3.5rem;
+}
+
+.social-sticky {
+    position: fixed;
+    right: 0;
+    top: 40vh;
+    width: max-content;
+    z-index: 1;
+    background-color: var(--bg-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.social-sticky .topbar-social-media-one {
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.refer-sticky svg{  
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.refer-sticky {
+    position: fixed;
+    top: 40vh;
+    width: max-content;
+    z-index: 1;
+    background-color: var(--main-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    transform: rotate(270deg);
+    left: -65px;
+}
+
+.refer-sticky a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.refer-sticky h5 {
+    line-height: 1;
+    margin: 0;
+    color: var(--head-color);
+    font-size: 1.2rem;
 }
