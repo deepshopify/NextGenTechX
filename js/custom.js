@@ -148,3 +148,14 @@ var swiper = new Swiper(".partner-slider", {
     },
   },
 });
+
+var swiper = new Swiper(".how-it .slider-container ", {
+  loop:true,
+  speed: 800,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
