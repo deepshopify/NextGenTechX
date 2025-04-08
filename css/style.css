@@ -18,6 +18,9 @@
     background-color: var(--bg-color) !important;
 }
 
+h4.wow.animate__fadeInUp:hover {
+    color: var(--main-color);
+}
 
 ul.main-menu-list li.active>a,
 ul.main-menu-list>li.active,
