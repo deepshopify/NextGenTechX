@@ -173,6 +173,11 @@
         object-fit: cover;
     }
 
+    .hero-image>video {
+        min-height: 57vh;
+        object-fit: cover;
+    }
+
     .inner-testimonials {
         flex-direction: column;
     }
@@ -289,6 +294,17 @@
                 width: calc(100% / 2 - 10px);
     }
 
+    .inner-refer {
+        flex-direction: column;
+    }
+    .inner-refer .refer-img, .inner-refer .how-it {
+        width: 100%;
+    }
+    .inner-refer .quality-item .quality-icon {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -391,6 +407,11 @@
 
     .cta2 .cta2-bg {
         min-height: 780px;
+    }
+
+    .inner-refer .quality-item .quality-icon {
+        max-width: 70px;
+        max-height: 70px;
     }
 }
 

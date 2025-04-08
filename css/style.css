@@ -3368,6 +3368,7 @@ tr {
 .inner-refer {
     display: flex;
     column-gap: 2rem;
+    align-items: center;
 }
 
 .refer-img {
@@ -3459,4 +3460,8 @@ radial-gradient(at 0% 0%, hsla(46,98%,73%,1) 0px, transparent 50%);
 
 tbody, td, tfoot, th, thead, tr {
     color: var(--white) !important;
+}
+
+.hero-image video {
+    width: 100%;
 }
