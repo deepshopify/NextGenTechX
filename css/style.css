@@ -7,9 +7,7 @@
     --head-color: #000000;
     --text-color: #848b94;
 
-    /* --bg-color: #52B5E9; */
     --bg-color: #043454;
-    /* --bg-color: #040C53; */
 }
 
 .main-header,
@@ -31,7 +29,6 @@ ul.main-menu-list>li:hover>a {
 }
 
 .partners,
-.services,
 .testimonials,
 .popular-services {
     background-color: #E7E7E7;
@@ -126,7 +123,7 @@ ul.main-menu-list>li:hover>a {
 .partners .bottom-brd,
 .popular-services .bottom-brd,
 .blogs .bottom-brd,
-.plans .bottom-brd {
+.plans .bottom-brd {    
     max-width: 400px;
     width: 100%;
 }
@@ -3465,4 +3462,51 @@ tbody, td, tfoot, th, thead, tr {
 
 .hero-image video {
     width: 100%;
+}
+
+/* about us */
+
+.abt-items, .core-values {
+    margin-top: 3rem;
+}
+
+.abt-items .quality-item {
+    box-shadow: none;
+}
+
+.abt-items .quality-item:hover {
+    box-shadow: -6px 6px 0px 2px var(--main-color);
+}
+
+.premium-drawable-icon svg {
+    fill: var(--main-color);
+}
+
+.core-values .quality-item {
+    position: relative;
+    box-shadow: none;
+    width: calc(100%/4 - 1.2rem);
+}
+
+.core-values .quality-item:hover {
+    box-shadow: none;
+    transform: none;
+}
+.core-values .quality-item img {
+    max-width: 150px;
+}
+
+.core-values .quality-item .quality-icon {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+
+.core-values .quality-item .icon-num {
+    justify-content: center;
+    margin-top:3rem;
+}
+
+.core-values h4 {
+    margin-bottom: 1.5rem;
 }
