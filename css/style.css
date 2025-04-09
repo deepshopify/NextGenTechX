@@ -3510,3 +3510,7 @@ tbody, td, tfoot, th, thead, tr {
 .core-values h4 {
     margin-bottom: 1.5rem;
 }
+
+.rmv-space {
+    padding-top: 0px;
+}
