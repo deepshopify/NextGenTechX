@@ -22,8 +22,16 @@ h4.wow.animate__fadeInUp:hover {
     color: var(--main-color);
 }
 
+h3:hover, .white-txt h3:hover, .ttl:hover, .why-join h4:hover {
+    color: var(--main-color) !important;
+}
+
 .how-it .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--main-color);
+}
+
+#right-arrow_copy {
+    color: var(--white);
 }
 
 .banner-video-overlay {
@@ -35,6 +43,20 @@ h4.wow.animate__fadeInUp:hover {
     background: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
     z-index: 1;
     pointer-events: none;
+}
+
+.client-reviews .swiper-button-next,
+.client-reviews .swiper-button-prev {
+    max-width: 30px !important;
+    max-height: 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    color: white;
+    cursor: pointer;
+}
+
+.testimonials .pxl-item--star #Capa_1 {
+    fill: var(--main-color) !important;
 }
 
 /* <-- End Deep Patel */
@@ -2268,7 +2290,7 @@ body {
 }
 
 .side-menu-logo-box {
-    max-width: 150px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
