@@ -130,8 +130,8 @@ var swiper = new Swiper(".partner-slider", {
   loop:true,
   speed: 800,
   autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
+    delay: 1000,
+    disableOnInteraction: true,
   },
   breakpoints: {
     0: {
@@ -154,8 +154,12 @@ var swiper = new Swiper(".how-it .slider-container ", {
   speed: 800,
   slidesPerView: 1,
   spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

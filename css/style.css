@@ -16,9 +16,29 @@
     background-color: var(--bg-color) !important;
 }
 
+/* Deep Patel --> Start */
+
 h4.wow.animate__fadeInUp:hover {
     color: var(--main-color);
 }
+
+.how-it .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
+.banner-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* <-- End Deep Patel */
+
 
 ul.main-menu-list li.active>a,
 ul.main-menu-list>li.active,
@@ -2248,7 +2268,7 @@ body {
 }
 
 .side-menu-logo-box {
-    max-width: 200px;
+    max-width: 150px;
     margin-left: auto;
     margin-right: auto;
 }
