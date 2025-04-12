@@ -2503,6 +2503,14 @@ ul.side-menu-social-media li a:hover i {
     width: 50%;
 }
 
+.full-row {
+    margin-bottom: 1.75rem;
+}
+
+.full-row>.input-wrapper {
+    width: 100%;
+}
+
 .contact-form textarea {
     height: 100%;
 }

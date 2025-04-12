@@ -239,7 +239,7 @@ Dover De 19901 - USA</p>
 
                 </div>
 
-                    <form action="#" method="post">
+                    <form id="contactForm" action="#" method="post">
 
                         <div class="single-row">
                             <div class="input-wrapper wow animate__fadeInUp" data-wow-duration="3s">
@@ -262,8 +262,8 @@ Dover De 19901 - USA</p>
                               <input type="tel" id="phone" name="phone" placeholder="Phone number" required="">
                           </div>
                       </div>
-                      
-                      <div class="single-row">
+
+                      <div class="full-row">
                         <div class="input-wrapper wow animate__fadeInUp" data-wow-duration="3s">
                           <input type="text" id="subject" name="subject" placeholder="Subject" required="">
                       </div>
@@ -273,7 +273,7 @@ Dover De 19901 - USA</p>
                             <textarea id="message" name="message" rows="7" placeholder="Write Message...."></textarea>
                         </div>
 
-                        <button type="submit" class="button wow animate__pulse" data-wow-duration="3s">Submit Require</button>
+                        <button type="submit" class="button wow animate__pulse" data-wow-duration="3s">Submit</button>
 
                     </form>
                 </div>
@@ -640,5 +640,28 @@ Dover De 19901 - USA</div>
     new WOW().init();
   </script>
 </body>
+<script>
+    const YOUR_DEPLOYED_SCRIPT_URL = "";
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const formData = new FormData(form);
+        if (YOUR_DEPLOYED_SCRIPT_URL) {
+            fetch(YOUR_DEPLOYED_SCRIPT_URL, {
+              method: "POST",
+              body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+              alert("Form submitted successfully!");
+              form.reset();
+            })
+            .catch(error => {
+              console.error("Error:", error);
+              alert("Form submission failed.");
+            });
+        };
+    })
+</script>
 
 </html>
