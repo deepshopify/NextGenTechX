@@ -59,6 +59,14 @@ h3:hover, .white-txt h3:hover, .ttl:hover, .why-join h4:hover {
     fill: var(--main-color) !important;
 }
 
+.bservice-item img {
+    transition: transform 0.5s ease;
+}
+
+.bservice-item img:hover {
+    transform: scale(1.1);
+}
+
 /* <-- End Deep Patel */
 
 
