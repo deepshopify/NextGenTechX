@@ -174,7 +174,7 @@ textarea {
 audio,
 canvas,
 video {
-    display: inline-block;
+    /* display: inline-block; */
     max-width: 100%;
 }
 
