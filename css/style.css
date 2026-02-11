@@ -1243,7 +1243,7 @@ ul.side-menu-social-media li a:hover:before {
 
 .mobile-nav-content {
     -ms-overflow-style: none;
-    background-color: var(--head-color);
+    background-color: var(--bg-color);
     height: 100%;
     left: 0;
     max-width: 300px;
@@ -3328,7 +3328,7 @@ tr {
     right: 0;
     top: 40vh;
     width: max-content;
-    z-index: 1;
+    z-index: 1111;
     background-color: var(--bg-color);
     padding-left: 10px;
     padding-right: 10px;
@@ -3350,7 +3350,7 @@ tr {
     position: fixed;
     top: 40vh;
     width: max-content;
-    z-index: 1;
+    z-index: 1111;
     background-color: var(--main-color);
     padding-left: 10px;
     padding-right: 10px;
