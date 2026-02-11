@@ -39,7 +39,7 @@ h3:hover, .white-txt h3:hover, .ttl:hover, .why-join h4:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
     z-index: 1;
     pointer-events: none;
