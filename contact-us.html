@@ -244,11 +244,11 @@ Dover De 19901 - USA</p>
                         <div class="single-row">
                             <div class="input-wrapper wow animate__fadeInUp" data-wow-duration="3s">
 
-                                <input type="text" id="fullname" name="firstName" placeholder="First name" required="">
+                                <input type="text" id="firstName" name="firstName" placeholder="First name" required="">
                             </div>
 
                             <div class="input-wrapper wow animate__fadeInUp" data-wow-duration="3s">
-                                <input type="text" id="fullname" name="lastName" placeholder="Last name" required="">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last name" required="">
                             </div>
                         </div>
 
@@ -274,6 +274,7 @@ Dover De 19901 - USA</p>
                         </div>
 
                         <button type="submit" class="button wow animate__pulse" data-wow-duration="3s">Submit</button>
+                        <p id="contactStatus" class="form-status" role="status" aria-live="polite"></p>
 
                     </form>
                 </div>
@@ -498,12 +499,12 @@ Dover De 19901 - USA</div>
                     <img style="width: 200px;" src="images/blog1.jpg" alt="post-img" />
                   </div>
                   <div class="content">
-                    <ul class="post-date">
+                    <!-- <ul class="post-date">
                       <li>
                         <i class="fa-solid fa-calendar-days me-2"></i>
                         3 Feb, 2026
                       </li>
-                    </ul>
+                    </ul> -->
                     <h6>
                        <a target="_blank" href="https://www.bullhorn.com/insights/job-market-trends/?utm_source=chatgpt.com">
                         U.S. Job Market Trends: Hiring Shifts & In-Demand Skills | Bullhorn
@@ -516,12 +517,12 @@ Dover De 19901 - USA</div>
                     <img style="width: 200px;" src="images/UsJobPost.jpeg" alt="post-img" />
                   </div>
                   <div class="content">
-                    <ul class="post-date">
+                    <!-- <ul class="post-date">
                       <li>
                         <i class="fa-solid fa-calendar-days me-2"></i>
                         15 Feb, 2025
                       </li>
-                    </ul>
+                    </ul> -->
                     <h6>
                        <a target="_blank" href="https://grabjobs.co/resources/job-trends-us/?utm_source=chatgpt.com">
                         Career & Hiring Trends: Top Industries and Job Opportunities | GrabJobs
@@ -642,27 +643,45 @@ Dover De 19901 - USA
   </script>
 </body>
 <script>
-    const YOUR_DEPLOYED_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx5ir3xpIe6AYlBetQKr8f-GNNz3veoKf9Fp4VzzF6rpddPoY1c9bHHkzgpHjh_zCLOwQ/exec";
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault();
-        const form = e.target;
-        const formData = new FormData(form);
-        if (YOUR_DEPLOYED_SCRIPT_URL) {
-            fetch(YOUR_DEPLOYED_SCRIPT_URL, {
-              method: "POST",
-              body: formData
-            })
-            .then(response => response.text())
-            .then(result => {
-              alert("Form submitted successfully!");
-              form.reset();
-            })
-            .catch(error => {
-              console.error("Error:", error);
-              alert("Form submission failed.");
-            });
-        };
-    })
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+    const submitButton = form.querySelector('button[type="submit"]');
+    const status = document.getElementById("contactStatus");
+    const originalText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.classList.add("is-loading");
+    submitButton.textContent = "Submitting...";
+    status.textContent = "Sending your message...";
+    status.className = "form-status";
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error("Request failed");
+      }
+
+      status.textContent = "Your form was submitted successfully. It may take some time to reach us.";
+      status.classList.add("success");
+      form.reset();
+    } catch (error) {
+      console.error("Error:", error);
+      status.textContent = "Form submission failed. Please try again.";
+      status.classList.add("error");
+    } finally {
+      submitButton.disabled = false;
+      submitButton.classList.remove("is-loading");
+      submitButton.textContent = originalText;
+    }
+  });
 </script>
 
 </html>
