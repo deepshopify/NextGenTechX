@@ -95,7 +95,7 @@ app.post("/api/contact", async (req, res) => {
       from: `"NxGen Technology" <${fromEmail}>`,
       to: toEmail,
       replyTo: email || undefined,
-      subject: subject ? `New inquiry: ${subject}` : "New inquiry from website",
+      subject: subject ? `NxGen Technology Website Contact Form: ${subject}` : "New inquiry from website",
       text: buildPlainText({ firstName, lastName, email, phone, subject, message }),
       html: buildHtml({ firstName, lastName, email, phone, subject, message })
     });
