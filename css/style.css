@@ -1366,6 +1366,10 @@ body {
     width: max-content;
 }
 
+.button.keep-case {
+    text-transform: none;
+}
+
 .hero-content .left-side {
     max-width: 685px;
 }
