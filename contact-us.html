@@ -655,7 +655,13 @@
     status.className = "form-status";
 
     try {
-      const response = await fetch("/api/contact", {
+      const host = (window.location.hostname || "").toLowerCase();
+      const isProdDomain = host === "nxgentechit.com" || host === "www.nxgentechit.com";
+      const apiUrl = isProdDomain
+        ? "https://backend.heretoday.in/api/contact"
+        : "http://localhost:8080/api/contact";
+
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
